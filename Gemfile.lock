@@ -1,0 +1,18 @@
+GIT
+  remote: https://github.com/ShiftaDeband/wayback-machine-downloader
+  revision: b81381396827521b4a1fa88b40fc4c27b3ec31e2
+  specs:
+    wayback_machine_downloader (2.3.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  universal-darwin-23
+
+DEPENDENCIES
+  wayback_machine_downloader (~> 2.3)!
+
+BUNDLED WITH
+   2.3.12

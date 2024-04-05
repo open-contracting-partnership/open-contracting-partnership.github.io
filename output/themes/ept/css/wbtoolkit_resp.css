@@ -1,0 +1,46 @@
+/******************************************
+	World Bank Group
+	e-Procurement Tookit Responsive CSS
+******************************************/
+@media (min-width:768px){
+	.main-menu div:nth-child(2n+1){padding-right:0;padding-left:0;}
+	.eprocLogo img{display:inline;}
+}
+
+@media (min-width:992px){
+	.page-header .lead{display:inline;border-left:1px solid #dedede;margin-left:10px;padding-left:10px;padding-top:0;}
+	#HeaderContainer  .row+.row{margin-top:20px;}
+}
+
+@media (min-width:1200px){
+}
+
+@media (max-width:768px){
+	#Main{margin-top:20px;}
+	.page-header .lead{display:block;padding-top:10px;}
+	.navbar{margin-bottom:0;}
+	.navbar-default .navbar-collapse{border-color:transparent;}
+	.navbar-brand {float: none;height: auto;padding: 0;}
+	.navbar-default .navbar-toggle{margin:0;}
+	.page-header{margin:0;}
+	.col-md-offset-2 .col-xs-12{margin:50px 0;}
+	.docLibrary{margin-top:0;}
+	.docLibrary .media-left{padding-right:20px;}
+	.notice{margin-top:0;}
+	#reqResults .panel-default .subItem {padding:10px 0 0 0;}
+	table {border: 0;}
+	table thead {display: none;}
+	table tr {margin-bottom: 10px;display: block;border-bottom: 2px solid #ddd;}
+	table td {display: block;text-align: left;font-size: 13px;border-bottom: 1px dotted #ccc;}
+	table td:last-child {border-bottom: 0;}
+	table td:before {content: attr(data-label);display:block;text-transform: uppercase;font-weight: bold;margin-bottom:4px;}
+}
+
+@media (max-width:480px){
+	footer ul.subdomain{border:0 none;padding:12px 0 0;}
+	footer ul.list-inline{display:block;}
+	.details .copyrights{float:left;}
+	.docLibrary .media-left{float:left;}
+	.docLibrary .media-body{display:inline;}
+	.docLibrary .media-body .list-inline li+li{border-left:1px solid #ededed;padding-left:5px;}
+}
