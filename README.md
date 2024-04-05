@@ -2,7 +2,7 @@
 
 ```shell
 bundle exec wayback_machine_downloader --all-timestamps https://www.eprocurementtoolkit.org
-rm -rf output/; ./manage.py websites/www.eprocurementtoolkit.org/ output
+rm -rf docs/; ./manage.py websites/www.eprocurementtoolkit.org/ docs
 ```
 
 To do:
