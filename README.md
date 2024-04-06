@@ -7,7 +7,7 @@ rm -rf docs/; ./manage.py websites/www.eprocurementtoolkit.org/ docs
 
 To do:
 
-- [ ] Edit `wayback_machine_downloader` to handle "File name too long @ dir_s_mkdir"
-- [ ] Rework `requirements/index.html` to open the correct `requirements-results-view/` file
-- [ ] Remove unnecessary pages (login, password, etc.)
+- [ ] Manually download files with "File name too long @ dir_s_mkdir" in `debug.log`
+- [ ] Rework `requirements/index.html` to open the correct `requirements-results-view/` file (or use JS to load the correct section via query string)
+- [ ] Remove French from dropdown (only home page is available)
 - [ ] Uncomment code, to review if any relevant differences across file versions
