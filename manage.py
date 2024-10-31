@@ -26,9 +26,8 @@ def readlines(file):
 
 @click.command()
 @click.argument("indir", type=click.Path(exists=True, file_okay=False))
-@click.argument("outdir", type=click.Path(exists=False, file_okay=False))
+@click.argument("outdir", type=click.Path(exists=False, file_okay=False, path_type=Path))
 def merge(indir, outdir):
-    outdir = Path(outdir)
     if outdir.exists():
         raise click.UsageError(f"The {outdir}/ directory exists")
 
