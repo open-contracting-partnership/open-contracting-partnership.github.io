@@ -10,14 +10,17 @@ import click
 import pypdf
 from pypdf.errors import PdfReadError
 
-REMOVE = re.compile(r"""
+REMOVE = re.compile(
+    r"""
     \?\w{6}\b                # cache-busting query string
     |\?v=\d\.\d\.\d+\b       # cache-busting query string
     |\d\.\d{2}\b(?=\ MB)     # file size
     |js-view-dom-id-\w{64}\b # class name
     |\b\w{7,22}-\d{8,10}\b   # anchor
     |<script\ type="application/json"[^<]+</script>
-""", re.VERBOSE)
+""",
+    re.VERBOSE,
+)
 
 
 def readlines(file):
